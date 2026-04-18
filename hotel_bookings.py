@@ -1,8 +1,9 @@
 import pandas as pd
 
-# Now your normal code
 hotel_bookings = pd.read_csv('hotel_bookings.csv')
 
+
+# rename columns
 hotel_bookings = hotel_bookings.rename(columns={
     'adults': 'num_adults',
     'children': 'num_children',
